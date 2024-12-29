@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.menu {
+  width: 80px;
+  background-color: #6200ea;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.home-button {
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: #ffffff;
+  color: #6200ea;
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.home-button:hover {
+  transform: scale(1.1);
+}
+
+.home-page {
+  margin-left: 100px;
+  padding: 20px;
+}
+
+.float-container {
+  position: fixed;
+  left: 100px;
+  top: 50px;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  animation: slide-in 0.5s ease forwards;
+  overflow: hidden;
+}
+
+/* Left Section: Users */
+.float-left {
+  flex: 1;
+  background-color: #e3f2fd;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-box {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.user-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.user-item {
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.user-item:hover {
+  background-color: #bbdefb;
+}
+
+/* Right Section: Roles */
+.float-right {
+  flex: 1;
+  background-color: #fff8e1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.role-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: auto;
+  flex: 1;
+}
+
+.role-item {
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.role-item:hover {
+  background-color: #ffe082;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+

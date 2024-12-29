@@ -1,0 +1,91 @@
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+  }
+
+  .users-page {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    margin-left: 50px; /* Keeps it closer to the menu */
+  }
+
+  .column {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .header {
+    background-color: #d71d4b;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 8px;
+    border-radius: 5px;
+  }
+
+  h2 {
+    margin-top: 0;
+    color: #333;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"], input[type="email"], select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[readonly], select {
+    background-color: #f9f9f9;
+  }
+
+  .permissions table {
+    width: 100%; /* Full width for table */
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+
+  .permissions th, .permissions td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .permissions th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+  }
+
+  .data-rights ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .data-rights ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-bottom: 5px;
+  }
